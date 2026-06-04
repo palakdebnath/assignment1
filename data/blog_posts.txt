@@ -1,0 +1,28 @@
+10 Python Tips Every Developer Should Know
+
+Python lists are the go-to data structure for most developers, and for good reason. They're flexible, easy to use, and work well for the majority of tasks. In my years of Python development, I've found that beginners often over-engineer their data structures when a simple list does the job perfectly.
+
+List comprehensions are one of Python's most elegant features. They make your code look professional and run faster. For example, instead of writing a five-line for-loop to square numbers, you can write: squares = [x**2 for x in range(10)]. Beautiful, right? I recommend always using list comprehensions as your default approach.
+
+However, let's talk about when NOT to use list comprehensions. If your logic spans more than one condition or requires multiple steps, a regular for-loop is actually better. Clarity beats cleverness every time. I've reviewed countless pull requests where a "clever" comprehension took five minutes to understand. Don't do that to your teammates.
+
+The Great List vs Set Debate
+
+Here's something that trips up many beginners: using lists when they should use sets. If you're checking whether an item exists in a collection repeatedly, a list will slow your program down significantly as data grows. Sets are designed for fast membership testing. My rule of thumb: if you're doing more than 50 lookups on a collection, convert it to a set first.
+
+That said, I've seen developers switch everything to sets prematurely and introduce bugs because sets don't preserve order and don't allow duplicates. Lists are perfectly fine for small datasets under a few hundred items, and the overhead of converting to a set isn't worth it for small collections.
+
+Understanding Time Complexity (Without the Math Jargon)
+
+You don't need a computer science degree to understand performance. Just remember:
+- Lists: fast for adding to the end, slow for searching
+- Sets: fast for searching, no duplicates, no order
+- Dictionaries: fast for looking up by a name or key
+
+Tuples: The Underrated Hero
+
+Most beginners ignore tuples and just use lists for everything. Big mistake. Tuples use less memory and are faster to iterate. More importantly, they signal to other developers that this data is fixed and should not be modified. Use tuples for things like GPS coordinates, RGB colors, or any data that shouldn't change after creation.
+
+My Final Advice
+
+Don't obsess over micro-optimizations when starting out. Write clear, readable code first. Python is slow compared to C or Java by design — it trades speed for developer happiness. Use lists by default, switch to sets when you need fast lookups, and only pull out the performance tricks when you've actually measured that something is slow. Premature optimization is the root of all evil, as the saying goes.

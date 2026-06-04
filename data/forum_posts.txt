@@ -1,0 +1,23 @@
+Q: Should I use a list or a set when checking if an item exists in a collection?
+A: Always use a set for membership testing if you can! Lists check every element one by one (O(n)), while sets use hashing and check in O(1). For any collection over 100 items, the difference is huge. I switched from list to set in my project and it went from 2 seconds to near-instant. Never use lists for fast lookups.
+---
+Q: Are list comprehensions always faster than for-loops in Python?
+A: Yes, list comprehensions are generally faster because they're optimized at the C level. I benchmarked this myself — list comprehension was 30% faster for a 1 million element list. Always prefer list comprehensions over for-loops.
+---
+Q: When should I use a tuple instead of a list?
+A: Use tuples for fixed data that won't change — like coordinates or config settings. They're immutable so Python can optimize them. They also communicate intent: "this data should not change." But honestly, for most beginner code, the difference doesn't matter much.
+---
+Q: Is it bad practice to use nested list comprehensions?
+A: Avoid nested list comprehensions whenever possible. They get confusing very fast. I once wrote a triple-nested comprehension and even I couldn't read it the next day. Use regular for-loops for anything nested — readability matters more than a tiny speed gain.
+---
+Q: My Python search through a list of 10,000 items is slow. What should I do?
+A: Convert your list to a set immediately. `my_set = set(my_list)` and then use `x in my_set`. For 10,000 items, list lookup is O(n) and set lookup is O(1). This single change can speed up your code by 1000x for repeated lookups. Lists are basically unusable for large-scale search.
+---
+Q: Should I sort my list before searching it?
+A: Sorting + binary search (bisect module) is a good option if you need ordered data AND fast lookups. It gives O(log n) search instead of O(n). But if you just need lookups and don't care about order, just use a set. Sorting first is unnecessary overhead unless you need the sorted order for other reasons.
+---
+Q: Are for-loops bad in Python? I heard I should avoid them.
+A: For-loops are NOT bad — they're perfectly fine for most use cases. Sure, list comprehensions or map/filter can be faster in some benchmarks, but for-loops are clearer, easier to debug, and totally acceptable. Don't over-optimize. Use comprehensions when they make code cleaner, not just for speed.
+---
+Q: How much memory does a Python list use compared to other structures?
+A: Lists pre-allocate extra memory to make appending fast. A list of 1000 integers uses more memory than a tuple of the same 1000 integers. If memory is critical, use tuples, arrays (from the array module), or NumPy arrays. For everyday scripting, lists are fine — don't optimize prematurely.

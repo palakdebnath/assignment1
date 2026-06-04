@@ -1,0 +1,161 @@
+2026-05-31 11:13:59,820 [INFO] Gemini client loaded successfully.
+2026-05-31 11:14:00,750 [INFO] Starting data indexing into ChromaDB...
+2026-05-31 11:14:02,030 [INFO] HTTP Request: GET https://chroma-onnx-models.s3.amazonaws.com/all-MiniLM-L6-v2/onnx.tar.gz "HTTP/1.1 200 OK"
+2026-05-31 11:14:05,176 [INFO] Indexed 12 documentation chunks.
+2026-05-31 11:14:05,301 [INFO] Indexed 8 forum post chunks.
+2026-05-31 11:14:05,482 [INFO] Indexed 13 blog post chunks.
+2026-05-31 11:14:05,482 [INFO] All data indexed successfully.
+2026-05-31 11:14:13,168 [INFO] Retrieving chunks for query: 'Should I use a list or a set for fast lookups?'
+2026-05-31 11:14:13,245 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 11:14:13,295 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 11:14:13,344 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 11:14:13,344 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.597)
+2026-05-31 11:14:13,344 [WARNING] Contradictions detected: ["'fast' appears in ['forum', 'documentation']  ←→  'slow' appears in ['forum']", "'prefer' appears in ['documentation']  ←→  'don't' appears in ['forum']"]
+2026-05-31 11:14:13,344 [INFO] Sources used in final answer: {'forum': 3, 'documentation': 2}
+2026-05-31 11:14:13,344 [INFO] Sending prompt to Gemini API...
+2026-05-31 11:14:13,344 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 11:14:13,578 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent "HTTP/1.1 404 Not Found"
+2026-05-31 11:19:30,959 [INFO] Gemini client loaded successfully.
+2026-05-31 11:19:31,030 [INFO] Starting data indexing into ChromaDB...
+2026-05-31 11:19:31,328 [INFO] Indexed 12 documentation chunks.
+2026-05-31 11:19:31,453 [INFO] Indexed 8 forum post chunks.
+2026-05-31 11:19:31,633 [INFO] Indexed 13 blog post chunks.
+2026-05-31 11:19:31,633 [INFO] All data indexed successfully.
+2026-05-31 11:19:37,135 [INFO] Retrieving chunks for query: 'Should I use a list or a set for fast lookups?'
+2026-05-31 11:19:37,213 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 11:19:37,265 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 11:19:37,313 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 11:19:37,313 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.597)
+2026-05-31 11:19:37,313 [WARNING] Contradictions detected: ["'fast' appears in ['forum', 'documentation']  ←→  'slow' appears in ['forum']", "'prefer' appears in ['documentation']  ←→  'don't' appears in ['forum']"]
+2026-05-31 11:19:37,313 [INFO] Sources used in final answer: {'forum': 3, 'documentation': 2}
+2026-05-31 11:19:37,313 [INFO] Sending prompt to Gemini API...
+2026-05-31 11:19:37,313 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 11:19:39,415 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 11:19:39,417 [INFO] Received response from Gemini.
+2026-05-31 11:29:48,752 [INFO] Retrieving chunks for query: 'How much memory does a list use?'
+2026-05-31 11:29:48,845 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 11:29:48,897 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 11:29:48,945 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 11:29:48,945 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.569)
+2026-05-31 11:29:48,945 [INFO] No contradictions detected between sources.
+2026-05-31 11:29:48,945 [INFO] Sources used in final answer: {'forum': 1, 'documentation': 3, 'blog': 1}
+2026-05-31 11:29:48,945 [INFO] Sending prompt to Gemini API...
+2026-05-31 11:29:48,945 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 11:29:49,456 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 11:29:49,459 [INFO] Received response from Gemini.
+2026-05-31 16:59:38,743 [INFO] Gemini client loaded successfully.
+2026-05-31 16:59:38,778 [INFO] Starting data indexing into ChromaDB...
+2026-05-31 16:59:38,994 [INFO] Indexed 12 documentation chunks.
+2026-05-31 16:59:39,118 [INFO] Indexed 8 forum post chunks.
+2026-05-31 16:59:39,296 [INFO] Indexed 13 blog post chunks.
+2026-05-31 16:59:39,296 [INFO] All data indexed successfully.
+2026-05-31 17:00:10,225 [INFO] Retrieving chunks for query: 'Should I use a list or a set for fast lookups?'
+2026-05-31 17:00:10,296 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:00:10,360 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:00:10,407 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:00:10,407 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.597)
+2026-05-31 17:00:10,407 [WARNING] Contradictions detected: ["'fast' appears in ['forum', 'documentation']  ←→  'slow' appears in ['forum']", "'prefer' appears in ['documentation']  ←→  'don't' appears in ['forum']"]
+2026-05-31 17:00:10,407 [INFO] Sources used in final answer: {'forum': 3, 'documentation': 2}
+2026-05-31 17:00:10,408 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:00:10,408 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:00:12,409 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:00:12,411 [INFO] Received response from Gemini.
+2026-05-31 17:01:57,510 [INFO] Retrieving chunks for query: 'What is the time complexity of searching a list?'
+2026-05-31 17:01:57,595 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:01:57,643 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:01:57,691 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:01:57,691 [INFO] Reranking done. Top chunk source: 'documentation' (score: 0.673)
+2026-05-31 17:01:57,691 [WARNING] Contradictions detected: ["'fast' appears in ['documentation', 'forum']  ←→  'slow' appears in ['forum']"]
+2026-05-31 17:01:57,691 [INFO] Sources used in final answer: {'documentation': 3, 'forum': 2}
+2026-05-31 17:01:57,691 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:01:57,691 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:01:58,829 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:01:58,831 [INFO] Received response from Gemini.
+2026-05-31 17:02:21,235 [INFO] Retrieving chunks for query: 'Are list comprehensions always faster than for loops?'
+2026-05-31 17:02:21,310 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:02:21,360 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:02:21,407 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:02:21,407 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.675)
+2026-05-31 17:02:21,407 [WARNING] Contradictions detected: ["'use' appears in ['forum', 'documentation']  ←→  'avoid' appears in ['forum']"]
+2026-05-31 17:02:21,407 [INFO] Sources used in final answer: {'forum': 2, 'documentation': 3}
+2026-05-31 17:02:21,407 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:02:21,407 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:02:22,493 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:02:22,495 [INFO] Received response from Gemini.
+2026-05-31 17:03:11,574 [INFO] Retrieving chunks for query: 'When should I use a tuple instead of a list?'
+2026-05-31 17:03:11,653 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:03:11,703 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:03:11,749 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:03:11,749 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.669)
+2026-05-31 17:03:11,749 [WARNING] Contradictions detected: ["'prefer' appears in ['documentation']  ←→  'don't' appears in ['forum']", "'use' appears in ['forum', 'documentation']  ←→  'avoid' appears in ['forum']"]
+2026-05-31 17:03:11,749 [INFO] Sources used in final answer: {'forum': 3, 'documentation': 2}
+2026-05-31 17:03:11,749 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:03:11,749 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:03:12,917 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:03:12,919 [INFO] Received response from Gemini.
+2026-05-31 17:04:09,736 [INFO] Retrieving chunks for query: 'How much memory does a list use compared to a tuple?'
+2026-05-31 17:04:09,799 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:04:09,853 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:04:09,902 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:04:09,902 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.601)
+2026-05-31 17:04:09,902 [WARNING] Contradictions detected: ["'prefer' appears in ['documentation']  ←→  'don't' appears in ['forum']"]
+2026-05-31 17:04:09,902 [INFO] Sources used in final answer: {'forum': 1, 'documentation': 3, 'blog': 1}
+2026-05-31 17:04:09,902 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:04:09,902 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:04:10,604 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:04:10,605 [INFO] Received response from Gemini.
+2026-05-31 17:04:32,110 [INFO] Retrieving chunks for query: 'What does the append method do and how fast is it?'
+2026-05-31 17:04:32,187 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:04:32,237 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:04:32,284 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:04:32,284 [INFO] Reranking done. Top chunk source: 'documentation' (score: 0.413)
+2026-05-31 17:04:32,284 [INFO] No contradictions detected between sources.
+2026-05-31 17:04:32,284 [INFO] Sources used in final answer: {'documentation': 3, 'forum': 2}
+2026-05-31 17:04:32,284 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:04:32,284 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:04:32,758 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:04:32,760 [INFO] Received response from Gemini.
+2026-05-31 17:04:53,029 [INFO] Retrieving chunks for query: 'My search through 10000 items is slow, what should I do?'
+2026-05-31 17:04:53,103 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:04:53,151 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:04:53,198 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:04:53,198 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.548)
+2026-05-31 17:04:53,198 [WARNING] Contradictions detected: ["'fast' appears in ['forum', 'documentation']  ←→  'slow' appears in ['forum']"]
+2026-05-31 17:04:53,198 [INFO] Sources used in final answer: {'forum': 3, 'documentation': 2}
+2026-05-31 17:04:53,198 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:04:53,198 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:04:54,781 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:04:54,783 [INFO] Received response from Gemini.
+2026-05-31 17:05:48,193 [INFO] Retrieving chunks for query: 'What is a dictionary and when should I use it?'
+2026-05-31 17:05:48,272 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:05:48,319 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:05:48,365 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:05:48,366 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.413)
+2026-05-31 17:05:48,366 [INFO] No contradictions detected between sources.
+2026-05-31 17:05:48,366 [INFO] Sources used in final answer: {'forum': 2, 'documentation': 3}
+2026-05-31 17:05:48,366 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:05:48,366 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:05:48,873 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:05:48,874 [INFO] Received response from Gemini.
+2026-05-31 17:06:15,309 [INFO] Retrieving chunks for query: 'Should I avoid nested list comprehensions?'
+2026-05-31 17:06:15,384 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:06:15,432 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:06:15,477 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:06:15,478 [INFO] Reranking done. Top chunk source: 'forum' (score: 0.611)
+2026-05-31 17:06:15,478 [WARNING] Contradictions detected: ["'prefer' appears in ['documentation']  ←→  'don't' appears in ['forum']", "'never' appears in ['forum']  ←→  'fine' appears in ['forum', 'documentation']"]
+2026-05-31 17:06:15,478 [INFO] Sources used in final answer: {'forum': 2, 'documentation': 3}
+2026-05-31 17:06:15,478 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:06:15,478 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:06:17,012 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:06:17,014 [INFO] Received response from Gemini.
+2026-05-31 17:06:37,625 [INFO] Retrieving chunks for query: 'What is the best data structure for beginners to start with?'
+2026-05-31 17:06:37,697 [INFO]   Retrieved 3 chunks from 'documentation'
+2026-05-31 17:06:37,745 [INFO]   Retrieved 3 chunks from 'forum'
+2026-05-31 17:06:37,792 [INFO]   Retrieved 3 chunks from 'blog'
+2026-05-31 17:06:37,792 [INFO] Reranking done. Top chunk source: 'blog' (score: 0.386)
+2026-05-31 17:06:37,792 [INFO] No contradictions detected between sources.
+2026-05-31 17:06:37,792 [INFO] Sources used in final answer: {'blog': 2, 'documentation': 3}
+2026-05-31 17:06:37,792 [INFO] Sending prompt to Gemini API...
+2026-05-31 17:06:37,792 [INFO] AFC is enabled with max remote calls: 10.
+2026-05-31 17:06:38,437 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-05-31 17:06:38,439 [INFO] Received response from Gemini.

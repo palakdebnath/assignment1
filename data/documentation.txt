@@ -1,0 +1,74 @@
+PYTHON DATA STRUCTURES - OFFICIAL DOCUMENTATION
+================================================
+
+LISTS
+-----
+A list is a mutable, ordered sequence of elements. Lists are defined using square brackets.
+
+Syntax: my_list = [element1, element2, element3]
+
+Common List Methods:
+- list.append(x)     : Adds item x to the end. Time complexity: O(1)
+- list.insert(i, x)  : Inserts x at position i. Time complexity: O(n)
+- list.remove(x)     : Removes first occurrence of x. Time complexity: O(n)
+- list.pop(i)        : Removes and returns item at index i. O(1) for last, O(n) for middle
+- list.sort()        : Sorts list in place. Time complexity: O(n log n)
+- list.index(x)      : Returns index of first occurrence of x. Time complexity: O(n)
+- list.count(x)      : Counts occurrences of x. Time complexity: O(n)
+
+SEARCHING IN LISTS
+------------------
+Checking if an element exists in a list uses the `in` operator.
+Time complexity of `x in list` is O(n) — it checks every element one by one.
+For large datasets requiring frequent lookups, a set or dictionary is preferred.
+
+Example:
+    my_list = [1, 2, 3, 4, 5]
+    print(3 in my_list)   # True, but checks up to 3 elements
+
+LIST COMPREHENSIONS
+-------------------
+List comprehensions provide a concise way to create lists.
+They are generally faster than equivalent for-loops for simple transformations.
+
+Syntax: [expression for item in iterable if condition]
+
+Example:
+    squares = [x**2 for x in range(10)]
+    evens   = [x for x in range(20) if x % 2 == 0]
+
+Note: List comprehensions should be used for simple, readable expressions.
+For complex logic involving multiple statements, a regular for-loop is preferred for clarity.
+
+SETS
+----
+A set is an unordered collection of unique elements. Sets use hash tables internally.
+Time complexity of `x in set` is O(1) on average — much faster than lists for lookups.
+
+Example:
+    my_set = {1, 2, 3, 4, 5}
+    print(3 in my_set)   # True, O(1) average
+
+DICTIONARIES
+------------
+Dictionaries store key-value pairs. Keys must be hashable. Lookup by key is O(1).
+
+Example:
+    my_dict = {"name": "Alice", "age": 30}
+    print(my_dict["name"])   # "Alice", O(1) lookup
+
+TUPLES
+------
+Tuples are immutable ordered sequences. They cannot be modified after creation.
+Tuples use slightly less memory than lists and are faster to iterate.
+Use tuples when data should not change (e.g., coordinates, RGB values).
+
+Memory Usage Comparison:
+- list  [1,2,3]: ~120 bytes
+- tuple (1,2,3): ~72 bytes
+
+FOR LOOPS VS LIST COMPREHENSIONS
+---------------------------------
+For-loops are explicit and easier to debug. They support complex multi-line logic.
+List comprehensions are compact but can hurt readability when nested deeply.
+The official Python style guide (PEP 8) recommends choosing clarity over cleverness.
